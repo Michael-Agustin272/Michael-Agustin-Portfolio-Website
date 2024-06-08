@@ -1,0 +1,258 @@
+*{
+    box-sizing: border-box ;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+    
+    
+}
+body{ background-image: url("images/mobileBG.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        
+                
+}
+
+
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top:0;
+    padding: 20px;
+    height: 64px;
+    width: 100%;
+    font-size: 15px;
+    background-color: #222629;
+    
+    
+          
+}
+
+#navbar-list{
+    display: none;
+    text-align: center;
+    color:aliceblue;
+    position:relative;
+    
+}
+
+#mobile-navbar-list{
+    display: none;
+    color:aliceblue;
+    background-color: rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur(10px);
+    position:absolute;
+    width: 100%;
+    z-index:1;
+    text-align: center;
+    
+}
+
+
+
+
+.m-list{
+    margin: 10px;
+}
+.m-list:hover{
+    color:#6B6370;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;
+    background-color: #86C232;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+#bottom-contents{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    position: relative;
+   
+}
+
+#profile-img{
+    margin-top: 30px;
+    width: 150px;
+    border-radius: 100px;
+    margin-bottom: 30px;
+    z-index: 0;
+    
+}
+
+#home{
+    color:aliceblue;
+}
+
+#menu-bar{
+    width:20px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: block;
+}
+
+#x-bar{
+    display: none;
+    width:18px;
+    margin-right: 20px;
+    cursor:pointer;
+}
+
+.white-text{
+    color:white;
+    font-size: 20px;
+}
+.green-text{
+    color: #86C232;
+    font-size: 30px;
+}
+
+.button {
+    margin-top: 10px;
+    background-color: #6B6370;
+    border: 1px solid #86C232;
+    border-radius: 50px;
+    width: 200px;
+    height: 30px;
+    color:#86C232;
+
+}
+
+#contact-button:hover{
+    
+    background-color: #86C232;
+    color:#474B4F;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+}
+#download:hover{
+    background-color: #86C232;
+    color:#474B4F;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+}
+#button-layout{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#social-media{
+    display: flex;
+}
+.social-logo{
+    width:30px;
+    margin: 20px;
+}
+
+
+
+@media (min-width:700px){
+    body{ background-image: url("images/bg.png");
+        background-size: cover;
+        weight: 100%;
+        height: 100vh;
+        position: relative;
+        
+        
+         
+}
+   
+       
+#bottom-contents{
+    display:flex;
+    flex-direction: COLUMN;
+    justify-content: center;
+    margin-right: 100px;
+    margin-top: 10%;
+    position: relative;
+    
+   
+}
+    #navbar-list{
+        display: flex;
+        color:white;
+        margin-right: 30px;      
+    }
+    
+
+    #home{
+        margin-left:30px;
+        font-size: 25px;
+    }
+    #main-menu{
+        display:none;
+    }
+
+    #profile-img{
+        display: none;
+    }
+    .list{
+        margin-left: 40px;
+        font-size: 18px;
+        margin:10px;
+       
+    }
+
+    .white-text{
+        color:white;
+        font-size: 40px;
+    }
+    .green-text{
+        color: #86C232;
+        font-size: 70px;
+    }
+
+    .button {
+        
+        margin: 40px;
+        background-color: #6B6370;
+        border-radius: 50px;
+        border: 1px solid #86C232;
+        width: 200px;
+        height: 50px;
+        color:#86C232;
+        font-size: 25px;
+    }
+  
+    #button-layout{
+        display: inline;    
+    }
+
+    .list:hover{
+        color:#86C232;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    #home:hover{
+        color:#86C232;
+        cursor: pointer; 
+        transition: all 0.3s ease 0s;
+    }
+    #contact-button:hover{
+    
+        background-color: #86C232;
+        color:#474B4F;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+
+    }
+    #download:hover{
+        background-color: #86C232;
+        color:#474B4F;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+
+    }
+}
