@@ -10,6 +10,7 @@
 body{ background-image: url("images/mobileBG.png");
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: bottom;
         height: 100vh;
         
                 
@@ -161,7 +162,8 @@ body{ background-image: url("images/mobileBG.png");
 @media (min-width:700px){
     body{ background-image: url("images/bg.png");
         background-size: cover;
-        weight: 100%;
+        background-position:top;
+        weight: 100vw;
         height: 100vh;
         position: relative;
         
