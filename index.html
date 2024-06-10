@@ -7,18 +7,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Michael Agustin</title>
 </head>
 
 <body>
     <nav id = "navbar">
-        <h3 id ="home">Michael Agustin</h3>
+       <a href="./index.html"> <h3 id ="home">MICHAEL AGUSTIN</h3></a>
         <div id ="main-menu">
         <img onclick= showSideBar() class ="hide-menu-bar" id = "menu-bar" src="./images/Hamburger_icon.svg.png" alt="Menu Icon"></div>
         <img onclick=closeSideBar() id = "x-bar" src="./images/x.png" alt="close icon">
 
         <ul id = "navbar-list">
-            <li class = 'list'>About</li>
+            <a href="./about.html"><li class = 'list'>About</li></a>
             <li class = 'list'>Experience</li>
             <li class = 'list'>Projects</li>
             <li class = 'list'>Contact</li>
@@ -26,7 +38,7 @@
     </nav>
 
     <ul id = "mobile-navbar-list">
-        <li class = 'm-list'>About</li>
+       <a href="./about.html"><li class = 'm-list'>About</li></a>
         <li class = 'm-list'>Experience</li>
         <li class = 'm-list'>Projects</li>
         <li class = 'm-list'>Contact</li>
@@ -35,14 +47,16 @@
     <div id = 'bottom-contents'>
             
         <img id="profile-img" src="images/profileBW.png" alt="Agustin img">
-        <p class = "white-text">Hi! I'm</p>
-        <h4 class ='green-text'>MICHAEL AGUSTIN</h4>
-        <p class = 'white-text'> Computer Engineer</p>
+        <p id = "introductory" class = "animation white-text">Hi! I'm</p>
+        <h4 id = "name" class ='green-text'>MICHAEL ADRIAN AGUSTIN</h4>
+        <p class = 'animation white-text'> Computer Engineer</p>
+        
         <div id = 'button-layout'>
             <a href="./files/Michael Adrian Agustin CV.pdf" download="">
-                <button class = 'button' id ="download"> Download CV</button></a>
+            <button class = 'button' id ="download"> Download CV</button></a>
             <button class = 'button' id ="contact-button"> Contact me</button>
         </div>
+        
         <div id="social-media">
             <a href="https://www.facebook.com/michaeladrian.agustin.92/">
                 <img class= "social-logo" src="./images/facebook.png" alt="facbook logo"></a>
