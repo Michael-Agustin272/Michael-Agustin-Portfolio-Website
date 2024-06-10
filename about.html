@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>About</title>
+</head>
+
+<body>
+    <div id="background"></div>
+    <nav id = "navbar">
+        <a href="./index.html"> <h3 id ="home">MICHAEL AGUSTIN</h3></a>
+        <div id ="main-menu">
+        <img onclick= showSideBar() class ="hide-menu-bar" id = "menu-bar" src="./images/Hamburger_icon.svg.png" alt="Menu Icon"></div>
+        <img onclick=closeSideBar() id = "x-bar" src="./images/x.png" alt="close icon">
+
+        <ul id = "navbar-list">
+            <li class = 'list'>About</li>
+            <li class = 'list'>Experience</li>
+            <li class = 'list'>Projects</li>
+            <li class = 'list'>Contact</li>
+        </ul>
+    </nav>
+
+    <ul id = "mobile-navbar-list">
+        <li class = 'm-list'>About</li>
+        <li class = 'm-list'>Experience</li>
+        <li class = 'm-list'>Projects</li>
+        <li class = 'm-list'>Contact</li>
+    </ul>
+
+    <div class = "about-me">
+        <img id ="profile-about" src="./images/profile.JPG" alt="Michael Agustin IMG">
+        <h3 class = "header">Hey, I'm Michael Adrian Agustin</h3>
+        <p class = "box p-text">I recently earned a bachelor’s degree in Computer Engineering at Notre 
+            Dame of Marbel University with an emphasis in software development, 
+            web development, robotics, Internet-of-Things, computer architecture,
+            programming, networking, hardware systems, and microprocessors. 
+            Conducted robotics and automation seminars and trainings to public and 
+            private schools. An awardee of Best Student Research Paper during the 
+            university’s 17th Araw ng Parangal 2024.</p>
+        
+        <div id="graphic-design-container" class="box-container">
+            <img id = "graphic-style" src="./images/graphic.png" alt="img">
+            <p class ="box p-text"> Aside from engineering and programming, I immersed myself in graphic design. I've been creating digital posters, digital arts, and even logos. In fact, I am a freelance graphic artist for 4 years now.</p>
+        </div>
+
+        <div id = "tools-container" class="box-container">
+            <h3 class = "header">Tools and language I use in programming and graphic design</h3>
+            <p class = "box p-text">My base programming language is C++, I'm good at some other programming languages as well such as Java and Python however, I believe that mastering a new programming language is seamless once you have a great foundation in a single programming language. For web development, I use HTML/CSS/Javascript.
+            </p>
+            <p class = "box p-text">For graphic designing, I use Adobe Photoshop and Illustrator. In terms of video editing, I use Adobe Premiere.</p>
+
+            <div id = "logos">
+                <h4 class = "header">Programming language</h4>
+                <div class = "logo-container">
+                    <img class = logo-size src="./images/c++.png" alt="c++ logo">
+                    <img class = logo-size src="./images/javascript.png" alt="javascript logo">
+                    <img class = logo-size src="./images/java.png" alt="java logo">
+                    <img class = logo-size src="./images/python.png" alt="python logo">
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src = "./index.js"></script>
+
+</body>
+</html>
