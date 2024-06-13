@@ -4,8 +4,13 @@
 }
 
 @keyframes slidingR{
-    from{transform: translateX(150px);}
-    to{transform: translateX(0px);}
+    from{transform: translate(0,0);}
+    to{transform: translateX(-100,0);}
+}
+
+@keyframes movingText{
+    from{transform: translateX(0);}
+    to{transform: translateX(-250%);}
 }
 
 *{
@@ -115,9 +120,9 @@ body{ background-image: url("images/mobileBG.png");
 
 #profile-about{
     margin-top: 30px;
-    width: 150px;
-    border-radius: 100px;
-    margin-bottom: 30px;
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
     position: relative;
 }
 
@@ -144,13 +149,6 @@ body{ background-image: url("images/mobileBG.png");
     font-size: 30px;
 }
 
-.p-text{
-    color:aliceblue;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal; 
-    font-size: 15px;
-}
 #home{
     color:aliceblue;
     font-family:"Bebas Neue", sans-serif;
@@ -221,12 +219,10 @@ a{text-decoration: none;}
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: justify;
-    text-justify: inter-word;
-    margin: 10%;
+    margin-left: 10%;
+    margin-right: 10%;;
     font-size: 20px;
     position: relative;
-  
 
 }
 
@@ -252,11 +248,23 @@ a{text-decoration: none;}
 
 }
 .header{
-    color:white;
-    font-family: "Roboto-mono", sans-serif;
+    color:#86C232;
+    font-family: "Bebas Neue", sans-serif;
     font-weight: 500;
     font-style: normal;
     margin-bottom: 10px; 
+    margin-top: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+.p-text{
+    color:aliceblue;
+    font-family: "Oswald", sans-serif;
+    font-weight: 200;
+    font-style: normal; 
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 .box-container{
     margin-top: 20px;
@@ -270,12 +278,30 @@ a{text-decoration: none;}
 }
 
 .logo-size{
-    width: 20%;
+    width: 10%;
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    margin: 10px;
 }
+
+.logo-size:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+
 .logo-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background-color: #474B4F;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 10%;
+
     
 }
 #logos{
@@ -283,8 +309,100 @@ a{text-decoration: none;}
     flex-direction: column;
     height:200px;
     position: relative;
+}
+
+.about-info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-web-size{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#interest-container{
+    text-align: center;
+    width: 100%;
+}
+
+#interest-button{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 10%;
+    width: 100%;
+    
+
+}
+.moving-text-container{
+    border: 1px solid 	#bffc4e;
+    height: 35px;
+    width:200px;
+    border-radius: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+.web-development{
+    
+    width:200px;
+}
+.ui-ux{
+    width:150px;
+}
+.software-dev{
+    width: 240px;
+}
+.graphic-design{
+    width:180px;
+}
+.robotics{
+    width:125px;
+}
+
+.text{
+    color: #86C232;
+    animation-name: movingText;
+    white-space: nowrap;
+    display: flex;
+    position: relative;
+}
+.text p{
+    margin-right: 10px;
+}
+.hidden{
+    display: none;
+}
+.visible{
+    margin-left: 25px;
     
 }
+
+#interest-button{
+    display: flex;
+}
+
+.text:hover{
+    cursor: pointer;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    .hidden{display: inline-block;}
+}
+
+
+
 
 
 
@@ -292,6 +410,7 @@ a{text-decoration: none;}
     body{ background-image: url("images/bg.png");
         background-size:cover;
         background-position:center;
+        background-attachment: fixed;
         width: 100vw;
         height: 100vh;
         position: relative;
@@ -304,16 +423,16 @@ a{text-decoration: none;}
     background-image: url("images/otherBG.png");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     color: white;
-    z-index: -2;
+    
+
 }
 
-#profile-about{
-    display: none;
-}
    
        
 #bottom-contents{
@@ -329,6 +448,9 @@ a{text-decoration: none;}
         color:white;
         margin-right: 30px;   
        
+    }
+    #profile-img{
+        display: none;
     }
 
     a{text-decoration: none;}
@@ -357,9 +479,6 @@ a{text-decoration: none;}
         display:none;
     }
 
-    #profile-img{
-        display: none;
-    }
 
     .list{
         margin-left: 40px;
@@ -435,5 +554,90 @@ a{text-decoration: none;}
     .social-logo:hover{
         transform: translateY(-10px);
     
+    }
+
+    .about-me{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
+
+    .window-container{
+        display: flex;
+        flex-direction: row;
+    }
+   #profile-about{
+    margin-top: 23%;
+    width: 400px;
+   }
+   .p-text{
+    color:aliceblue;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal; 
+    font-size: 25px;
+}
+    .box-web-size{
+        flex-basis: 250%;
+        margin-top: 10%;
+        margin-left: 50px;
+    }
+    .header{
+        font-size: 50px;
+        margin-top: 0;
+        margin-left: 20px;
+        color: #86C232;
+    }
+    .box{
+        background: none;
+    }
+
+    #graphic-style{
+        width: 400px;
+    }
+    .right-content{
+    
+        margin-left: 50px;
+        
+    }
+    .window-container{
+        margin-bottom: 100px;
+    }
+    #tools-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .left-tools-content{
+        
+        
+        flex-basis: 50%;
+        margin-right: 50px;
+    }
+    #logos{
+        flex-basis: 50%;
+    
+    }
+    #graphic-design-container{
+        align-items: center;
+
+    }
+    .logo-size{
+        width:10%;
+    }
+    .second-header{
+        font-size: 30px;
+        margin-left: 0;
+        color: aliceblue;
+        text-align: left;
+    }
+    .p-text{
+      
+        font-family: "Oswald", sans-serif;
+        font-size: 24px;
+
+    }
+    .box-container{
+        display: flex;
     }
 }
