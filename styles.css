@@ -22,7 +22,8 @@
     
     
 }
-body{   background-color: #1a1c1f;                
+body{   background-color: #1a1c1f;  
+                 
 }
 #background{
 
@@ -47,52 +48,29 @@ body{   background-color: #1a1c1f;
     font-size: 15px;
     background-color: #222629;
     position: relative;
-    z-index: 3;
+    z-index: 5;
+    border-bottom: #86C232 1px solid;
     
     
           
 }
 
-#navbar-list{
-    display: none;
-    text-align: center;
-    color:aliceblue;
-    position:relative;
-    
-}
-
-
-#mobile-navbar-list{
-    display: none;
-    color:aliceblue;
-    background-color: rgba(255, 255, 255, 0.37);
-    backdrop-filter: blur(10px);
-    position:absolute;
-    width: 100%;
-    text-align: center;
-    z-index:2;
-
-    overflow: hidden;
-    transition: all 0.5 ease-in;
-    
-}
-
-
-
-
-
-
-.m-list{
-    margin: 10px;
-    color:aliceblue;
-}
-.m-list:hover{
-    color:#6B6370;
-    cursor:pointer;
-    transition: all 0.3s ease 0s;
+#about-me-button{
     background-color: #86C232;
-    margin-left: 0px;
-    margin-right: 0px;
+    border-radius: 30px;
+    width:100px;
+    height: 30px;
+    border:#bffc4e solid 1px;
+    margin-right: 10px;
+    filter: drop-shadow(0px 0px 10px #86C232);
+    color: aliceblue;
+}
+
+#about-me-button:hover{
+    cursor: pointer;
+    filter: none;
+    color: #1a1c1f;
+
 }
 
 
@@ -126,19 +104,6 @@ body{   background-color: #1a1c1f;
     position: relative;
 }
 
-#menu-bar{
-    width:20px;
-    margin-right: 20px;
-    cursor: pointer;
-    display: block;
-}
-
-#x-bar{
-    display: none;
-    width:18px;
-    margin-right: 20px;
-    cursor:pointer;
-}
 
 .white-text{
     color:white;
@@ -275,6 +240,10 @@ a{text-decoration: none;}
     position: relative;
 
 }
+#tools-container{
+    position: relative;
+    width: 100%;
+}
 
 #graphic-style{
     width:100%;
@@ -311,8 +280,8 @@ a{text-decoration: none;}
 #logos{
     display: flex;
     flex-direction: column;
-    height:200px;
     position: relative;
+    
 }
 
 .about-info-container{
@@ -409,11 +378,33 @@ a{text-decoration: none;}
     color: aliceblue;
     align-items: center;
     margin: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 #contact-container{
-    margin: 10%;
     position: relative;
+    background-color: #222629;
+    width: 100%;
+    border-top: #86C232 1px solid;
+    
 }
+#contact-text{
+    color:aliceblue;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-style: normal; 
+    font-size: 16px;
+    margin: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}
+
+.footer-space{
+    margin-top: 20px;
+    color: #86C232;
+}
+
 .fa-solid, .fa-regular{
     margin-right: 30px;
     color:#86C232;
@@ -438,6 +429,7 @@ a{text-decoration: none;}
   
     position: relative;
     margin:10%;
+    margin-top: 5%;
 }
 
 .project-image{
@@ -467,9 +459,8 @@ a{text-decoration: none;}
     display: flex;
     
 }
-#new-content{
-    background-color: rgba(255, 255, 255, 0.37);
-    backdrop-filter: blur(30px);
+.new-content{
+    background-color:#222629;
     position: relative;
     text-align: center;
     display: none; 
@@ -546,7 +537,7 @@ a{text-decoration: none;}
     color: aliceblue;
     font-size: 20px;
 }
-.fa-x{
+.fa-x:hover{
     cursor: pointer;
     color:#86C232;
 }
@@ -557,6 +548,16 @@ a{text-decoration: none;}
     font-family: "Bebas Neue", sans-serif;
     font-size: 20px;
     color: aliceblue;
+}
+
+.project-title{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.left-project-container{
+    margin-bottom: 5%;
 }
 
 /* For scrolling animation */
@@ -572,6 +573,7 @@ a{text-decoration: none;}
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+    
 
 }
 
@@ -668,20 +670,15 @@ a{text-decoration: none;}
     #home{
         font-family: "Bebas Neue", sans-serif;
         margin-left:30px;
-        font-size: 25px;
+        font-size: 30px;
         font-style: normal;
     }
     #name{
         font-family: "Bebas Neue", sans-serif;
         font-style: normal;
-        animation: sliding 0.8s ease-out 1 normal;
-        
 
     }
 
-    .animation{
-        animation: slidingR 0.8s ease-out 1 normal;   
-    }
     
     
     #main-menu{
@@ -692,7 +689,8 @@ a{text-decoration: none;}
     .list{
         margin-left: 40px;
         font-size: 18px;
-        margin:10px;
+        margin-left:30px;
+        margin-right: 10px;
         color: white;
        
     }
@@ -847,8 +845,6 @@ a{text-decoration: none;}
     #contact-container{
         display: flex;
         flex-direction: row;
-        margin-left: 20%;
-        margin-right: 20%;
         justify-content: center;
         align-items: center;
         
@@ -864,12 +860,19 @@ a{text-decoration: none;}
         margin-left: 10%;
         margin-right: 10%;
         display: flex;
-        flex-direction: column;
-        margin-top: 5%;
+        flex-direction: row;
+        align-items: center;
         
         
         
 
+    }
+    .left-project-container{
+        flex-basis: 40%;
+        margin-right: 5%;
+    }
+    .right-project-container{
+        flex-basis: 60%;
     }
     .sub-heading{
         font-size: 25px;
@@ -880,6 +883,8 @@ a{text-decoration: none;}
 
     .new-content{
     margin-bottom: 20%;
+    position: relative;
+    left: 0;
     
     }
 
@@ -936,8 +941,9 @@ a{text-decoration: none;}
 }
 .project-title{
     font-family: "Bebas Neue", sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     color: aliceblue;
+    flex-basis: 70%;
 }
 
 }

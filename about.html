@@ -20,6 +20,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>About</title>
 </head>
 
@@ -27,23 +29,9 @@
     <div id="background"></div>
     <nav id = "navbar">
         <a href="./index.html"> <h3 id ="home">MICHAEL AGUSTIN</h3></a>
-        <div id ="main-menu">
-        <img onclick= showSideBar() class ="hide-menu-bar" id = "menu-bar" src="./images/Hamburger_icon.svg.png" alt="Menu Icon"></div>
-        <img onclick=closeSideBar() id = "x-bar" src="./images/x.png" alt="close icon">
-
-        <ul id = "navbar-list">
-            <a href="./about.html"><li class = 'list'>About</li></a>
-            <a href="./projects.html"><li class = 'list'>Projects</li></a>
-            <a href="./contact.html"><li class = 'list'>Contact</li></a>
-        </ul>
-    </nav>
-
-    <ul id = "mobile-navbar-list">
-       <a href="./about.html"> <li class = 'm-list'>About</li></a>
-        <a href="./projects.html"><li class = 'm-list'>Projects</li></a>
-        <a href="./contact.html"><li class = 'm-list'>Contact</li></a>
-    </ul>
-
+ 
+         <a href="./about.html"><button id = "about-me-button">Get to know me</button></a>
+     </nav>
     <div class = "about-me">
         
             <div class = "window-container about-info-container">
@@ -51,8 +39,8 @@
                     <img id ="profile-about" class ="large-photo" src="./images/profile.JPG" alt="Michael Agustin IMG">
                 </div>
                 <div class = "right-content box-web-size">
-                    <h3 class = "header">Hey, I'm Michael Adrian Agustin</h3>
-                    <p class = "box p-text">I recently earned a bachelor’s degree in Computer Engineering at Notre 
+                    <h3 class = "header">Hi! I'm Michael Adrian Agustin</h3>
+                    <p class = "box p-text">Earned a bachelor’s degree in Computer Engineering at Notre 
                         Dame of Marbel University with an emphasis in software development, 
                         web development, robotics, Internet-of-Things, computer architecture,
                         programming, networking, hardware systems, and microprocessors. 
@@ -217,6 +205,162 @@
         </div>
 
     </div>
+
+    <div id = "project-container" class = "project-screen">
+        <div class = "left-project-container left-content">
+            <h3 class = "header">PROJECTS</h3>
+            <p class = "p-text">These are the projects that I have contribution with during my college years. Mostly are prototypes for researches/capstones. My main role in these projects is programmer, specifically I handle the logic behind how the system would work through coding. </p>
+        </div>
+        <div class = "right-project-container right-content">
+            <div class = "project">
+                <div onclick= showDetails() id = "p-detail">
+                    <div class = "project-detail">
+                        <img class = "project-image" src="./images/asp.png" alt="">
+                        <i onclick= showDetails()  id = "inf" class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class = "project-title">Automated Solar-Powered Corn Planting Robot</div>
+                </div>
+            </div>
+
+            
+
+            <div  class = "project">
+                <div onclick= showDetailsP2() id = "p-detail">
+                    <div class = "project-detail">
+                        <img class = "project-image" src="./images/asp.png" alt="">
+                        <i onclick= showDetailsP2()  id = "inf" class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class = "project-title">Multi-Functional Cane: An Assistive Aid for Visully Impaired Individuals</div>
+                </div>
+
+            </div>
+
+            <div class = "project">
+                <div onclick= showDetails() id = "p-detail">
+                    <div class = "project-detail">
+                        <img class = "project-image" src="./images/asp.png" alt="">
+                        <i onclick= showDetails()  id = "inf" class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class = "project-title">Automated Solar-Powered Corn Planting Robot</div>
+                </div>
+
+            </div>
+    </div>
+
+    <div class = "new-content-container project-screen">
+        <div id = "project1" class = "new-content">
+            <i onclick=hideDetails() class="fa-solid fa-x"></i>
+            <div class = "upper">
+                <div class = 'left'>
+                    <img class="project-image-size2" src="./images/asp.png" alt="">
+                </div>
+                <div class="right"> 
+                    <h3 class = " project-header">Automated Solar-Powered Corn Planting Robot</h3>
+                    <h4 class = "sub-heading role">Role: Programmer and documenter</h4>
+                </div>
+            </div>
+            <h4 class = "sub-heading ">Abstract </h4>
+            <p class = "project-text p-text">This study aims to design and create 
+            an automated robot that automatically plants corn seeds. This automated robot is also 
+            integrated with solar power to make the most of the tropical climate in the area. The 
+            Automated Solar-Powered Corn Planting Robot (ASP-CPR) was designed by the 
+            researchers with the following functions: it can drill farmed soil with a regular depth and 
+            distance and release a standard amount of corn seeds on the drilled soil automatically that 
+            follows the standard set-up of the Department of Agriculture. Upon multiple tests, results 
+            revealed that the accuracy of releasing the standard number of seeds is 94%, 98 % for the 
+            depth of drilled soil, and 92% for the distance taken by ASP-CPR between planted seeds.
+            Additionally, the researchers integrated a notification system that notifies the user if the 
+            robot experiences low power, immovability, or an empty seed container. Moreover, the 
+            researchers conducted a product quality evaluation ISO/IEC 25010 for 20 respondents
+            where the gathered data and results revealed an overall weighted mean of 4.13, which 
+            indicates a strong agreement amongst respondents that ASP-CPR adheres to the quality 
+            model.
+            </p>
+
+        </div>
+    </div> 
+
+    <div class = "new-content-container project-screen">
+        <div id = "project2" class = "new-content">
+            <i onclick=hideDetailsP2() class="fa-solid fa-x"></i>
+            <div class = "upper">
+            <div class = 'left'>
+                <img class="project-image-size2" src="./images/asp.png" alt=""></div>
+            <div class="right"> <h3 class = " project-header">Multi-Functional Cane: An Assistive Aid for Visully Impaired Individuals</h3>
+            <h4 class = "sub-heading role">Role: Programmer</h4></div></div>
+            <h4 class = "sub-heading ">Abstract </h4>
+            <p class = "project-text p-text">This paper presented a multi-functional cane developed to assist the
+                visually impaired in detecting obstacles and liquids, and providing voice and
+                auditory alerts as well as a panic button. The cane included a GPS module that
+                sent emergency signals via SMS to the user's appointed guardian or family
+                member. The study aimed to provide necessary assistance to the visually
+                impaired, considering the global prevalence of near- or distance vision
+                impairment. The device featured ultrasonic and water level sensors positioned
+                to provide accurate information about obstacles and liquids in front of the user.
+                The GPS module was implemented for easy location of the visually impaired.
+                The study tested the accuracy of the sensors, and the device was able to detect
+                obstacles within 0.75 m and accurately detect water when submerged for three
+                seconds. The multi-functional cane effectively alerted users about obstacles
+                and liquids in front of them and sent the user's location via SMS. This cane has
+                the potential to greatly improve the quality of life for the visually impaired.
+                
+            </p>
+
+        </div>
+    </div>
+
+    <div class = "new-content-container project-screen">
+        <div id = "project3" class = "new-content">
+            <i onclick=hideDetails() class="fa-solid fa-x"></i>
+            <div class = "upper">
+            <div class = 'left'>
+                <img class="project-image-size2" src="./images/asp.png" alt=""></div>
+            <div class="right"> <h3 class = " project-header">Automated Solar-Powered Corn Planting Robot</h3>
+            <h4 class = "sub-heading role">Role: Programmer and documenter</h4></div></div>
+            <h4 class = "sub-heading ">Abstract </h4>
+            <p class = "project-text p-text">This study aims to design and create 
+            an automated robot that automatically plants corn seeds. This automated robot is also 
+            integrated with solar power to make the most of the tropical climate in the area. The 
+            Automated Solar-Powered Corn Planting Robot (ASP-CPR) was designed by the 
+            researchers with the following functions: it can drill farmed soil with a regular depth and 
+            distance and release a standard amount of corn seeds on the drilled soil automatically that 
+            follows the standard set-up of the Department of Agriculture. Upon multiple tests, results 
+            revealed that the accuracy of releasing the standard number of seeds is 94%, 98 % for the 
+            depth of drilled soil, and 92% for the distance taken by ASP-CPR between planted seeds.
+            Additionally, the researchers integrated a notification system that notifies the user if the 
+            robot experiences low power, immovability, or an empty seed container. Moreover, the 
+            researchers conducted a product quality evaluation ISO/IEC 25010 for 20 respondents
+            where the gathered data and results revealed an overall weighted mean of 4.13, which 
+            indicates a strong agreement amongst respondents that ASP-CPR adheres to the quality 
+            model.
+            </p>
+
+        </div>
+    </div>
+        
+</div>
+
+<footer id = "contact-container">
+    
+    <h3 class="header footer-space">Contact ME</h3>
+    <div class = "co">
+        <div class = "contact-orientation">
+            <i class="fa-regular fa-envelope"></i>
+            <p>michaelagustin2702@gmail.com</p>
+        </div>
+        <div class = "contact-orientation">
+            <i class="fa-solid fa-phone"></i>
+            <p>09469092862</p>
+        </div>
+        <div class = "contact-orientation">
+            <i class="fa-solid fa-thumbs-up"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-github"></i>
+        </div>
+    </div>
+    <p id = "contact-text">© 2024 Michael Adrian P. Agustin</p>
+</footer>
 
 
 

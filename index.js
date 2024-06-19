@@ -23,31 +23,25 @@ function closeSideBar(){
 }
 
 function showDetails(){
-    const infoLogo = document.getElementById("new-content");
+    const infoLogo = document.getElementById("project1");
     infoLogo.style.display = "block";
 }
 
 function hideDetails(){
-    const xLogo = document.getElementById("new-content");
+    const xLogo = document.getElementById("project1");
     xLogo.style.display = "none";
 }
 
-/*const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        console.log(entry)
-        if (entry.isIntersecting){
-            entry.target.classList.add('show');
-        }
-        else {
-            entry.target.classList.remove('show');
-        }
-        
+function showDetailsP2(){
+    const infoLogo = document.getElementById("project2");
+    infoLogo.style.display = "block";
+}
 
-    });
-});
+function hideDetailsP2(){
+    const xLogo = document.getElementById("project2");
+    xLogo.style.display = "none";
+}
 
-const hiddenElements = document.querySelectorAll(".window-container");
-hiddenElements.forEach((el)=> observer.observe(el)); */
 
 
 
