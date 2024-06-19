@@ -19,12 +19,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Michael Agustin</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>About</title>
 </head>
 
 <body>
+    <div id="background"></div>
     <nav id = "navbar">
-       <a href="./index.html"> <h3 id ="home">MICHAEL AGUSTIN</h3></a>
+        <a href="./index.html"> <h3 id ="home">MICHAEL AGUSTIN</h3></a>
         <div id ="main-menu">
         <img onclick= showSideBar() class ="hide-menu-bar" id = "menu-bar" src="./images/Hamburger_icon.svg.png" alt="Menu Icon"></div>
         <img onclick=closeSideBar() id = "x-bar" src="./images/x.png" alt="close icon">
@@ -42,28 +46,25 @@
         <a href="./contact.html"><li class = 'm-list'>Contact</li></a>
     </ul>
 
-    <div id = 'bottom-contents'>
-            
-        
-        <p id = "introductory" class = "animation white-text">HI! I'M</p>
-        <h4 id = "name" class ='green-text'>MICHAEL ADRIAN AGUSTIN</h4>
-        <p class = 'animation white-text'> COMPUTER ENGINEER</p>
-        
-        <div id = 'button-layout'>
-            <a href="./files/Michael Adrian Agustin CV.pdf" download="">
-            <button class = 'button' id ="download"> Download CV</button></a>
-            <a href="./contact.html"><button class = 'button' id ="contact-button"> Contact me</button></a>
+    <div id = "contact-container">
+    
+        <h3 class="header">Contact ME</h3>
+        <div class = "co">
+            <div class = "contact-orientation">
+                <i class="fa-regular fa-envelope"></i>
+                <p>michaelagustin2702@gmail.com</p>
+            </div>
+            <div class = "contact-orientation">
+                <i class="fa-solid fa-phone"></i>
+                <p>09469092862</p>
+            </div>
+            <div class = "contact-orientation">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-github"></i>
+            </div>
         </div>
-        
-        <div id="social-media">
-            <a href="https://www.facebook.com/michaeladrian.agustin.92/">
-                <img class= "social-logo" src="./images/facebook.png" alt="facbook logo"></a>
-            <a href="https://www.instagram.com/_michaelagustin_/">
-                <img class= "social-logo" src="./images/instagram.png" alt="instagram logo"></a>
-            <a href="https://github.com/Michael-Agustin272">
-                <img class= "social-logo" src="./images/github.png" alt="github logo"></a>
-        </div>
-        
     </div>
 
     <script src = "./index.js"></script>
