@@ -21,3 +21,13 @@ function closeSideBar(){
     
 
 }
+
+function showDetails(){
+    const infoLogo = document.getElementById("new-content");
+    infoLogo.style.display = "block";
+}
+
+function hideDetails(){
+    const xLogo = document.getElementById("new-content");
+    xLogo.style.display = "none";
+}
