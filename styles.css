@@ -559,6 +559,54 @@ a{text-decoration: none;}
     color: aliceblue;
 }
 
+/* For scrolling animation */
+.left-content{
+    opacity: 0;
+    filter:blur(2px);
+    transform: translateX(-100%);
+    transition: all ease 1s;
+
+
+}
+.showLeft{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+
+}
+
+.right-content{
+    opacity: 0;
+    filter:blur(2px);
+    transform: translateX(100%);
+    transition: all ease 1s;
+
+
+}
+.showRight{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+
+}
+
+.up-animation{
+    opacity: 0;
+    filter:blur(2px);
+    transform: translateY(100%);
+    transition: all ease 1s;
+
+}
+.showUp{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+
+}
+
+
+/* End of scrolling animation*/
+
 
 
 
@@ -891,4 +939,5 @@ a{text-decoration: none;}
     font-size: 25px;
     color: aliceblue;
 }
+
 }
